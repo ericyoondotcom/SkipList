@@ -45,7 +45,7 @@ namespace SkipList
         {
             Random randy = new Random(Guid.NewGuid().GetHashCode());
 			int myLevel = 1;
-            while (randy.Next(0, 2) == 0)
+            while (randy.Next(0, 2) == 1)
             {
                 myLevel++;
             }
@@ -83,12 +83,9 @@ namespace SkipList
 			SkipListNode<T> node = head;
 			while (level >= 0)
 			{
-				if (node == null)
-				{
-                    return false;
-				}
 
-				if (node.val.CompareTo(val) == 0 && node != head)
+
+                if (node.next[level].val.Equals(val))
 				{
 					return true;
 				}
@@ -112,7 +109,7 @@ namespace SkipList
 
             levels[0] += "H ";
             for (int i = 1; i < levels.Length; i++){
-                levels[i] += i.ToString() + " ";
+                levels[i] += "# ";
             }
 
             SkipListNode<T> currNode = head.next[0];
@@ -122,10 +119,17 @@ namespace SkipList
 
                 for (int i = 1; i < head.next.Length; i++){
                     if(i < currNode.next.Length){
-                        levels[i] += "+ ";
+                        levels[i] += "#";
+                        for (int j = 0; j < currNode.val.ToString().Length; j++){
+                            levels[i] += " ";
+                        }
 
                     }else{
-                        levels[i] += "  ";
+                        levels[i] += " ";
+						for (int j = 0; j < currNode.val.ToString().Length; j++)
+						{
+							levels[i] += " ";
+						}
                     }
                 }
                 currNode = currNode.next[0];

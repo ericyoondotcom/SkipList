@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{A997CD0A-29C6-4627-9BB5-B40B665B1D63}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SkipList/SkipListNode.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SkipList/Program.cs">
     <Files>
-      <File FileName="SkipList/Program.cs" Line="1" Column="1" />
-      <File FileName="SkipList/SkipList.cs" Line="1" Column="1" />
-      <File FileName="SkipList/SkipListNode.cs" Line="1" Column="1" />
+      <File FileName="SkipList/Program.cs" Line="31" Column="1" />
+      <File FileName="SkipList/SkipList.cs" Line="90" Column="15" />
+      <File FileName="SkipList/SkipListNode.cs" Line="10" Column="11" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

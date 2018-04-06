@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace SkipList
 {
@@ -7,19 +8,23 @@ namespace SkipList
         public static void Main(string[] args)
         {
             SkipList<int> skippy = new SkipList<int>();
-            skippy.AddNode(6);
-            skippy.AddNode(3);
-            skippy.AddNode(2);
-            skippy.AddNode(7);
-            skippy.AddNode(1);
-            skippy.AddNode(4);
-            skippy.AddNode(5);
-            skippy.AddNode(9);
-            skippy.AddNode(8);
-            Console.Write(skippy);
-            skippy.RemoveNode(6);
-            Console.Write(skippy);
-            Console.Write(skippy.Contains(6));
+            for (int i = 0; i <= 25; i++) {
+                Random randy = new Random(Guid.NewGuid().GetHashCode());
+                skippy.AddNode(randy.Next(0, 1001));
+            }
+
+            foreach(char c in skippy.ToString()){
+                if (c != ' ')
+                {
+                    Console.BackgroundColor = ConsoleColor.Magenta;
+                }
+                else
+                {
+                    Console.BackgroundColor = ConsoleColor.DarkYellow;
+                }
+                Console.Write(c);
+                Thread.Sleep(2);
+            }
         }
     }
 }
