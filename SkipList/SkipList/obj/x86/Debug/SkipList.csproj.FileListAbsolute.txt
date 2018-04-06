@@ -1,0 +1,5 @@
+/Users/yooniverse/Documents/SkipList/SkipList/SkipList/bin/Debug/SkipList.exe
+/Users/yooniverse/Documents/SkipList/SkipList/SkipList/bin/Debug/SkipList.pdb
+/Users/yooniverse/Documents/SkipList/SkipList/SkipList/obj/x86/Debug/SkipList.csproj.CoreCompileInputs.cache
+/Users/yooniverse/Documents/SkipList/SkipList/SkipList/obj/x86/Debug/SkipList.exe
+/Users/yooniverse/Documents/SkipList/SkipList/SkipList/obj/x86/Debug/SkipList.pdb

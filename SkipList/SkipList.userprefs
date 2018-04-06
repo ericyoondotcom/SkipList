@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{A997CD0A-29C6-4627-9BB5-B40B665B1D63}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SkipList/SkipListNode.cs">
+    <Files>
+      <File FileName="SkipList/Program.cs" Line="1" Column="1" />
+      <File FileName="SkipList/SkipList.cs" Line="1" Column="1" />
+      <File FileName="SkipList/SkipListNode.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.SkipList PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
